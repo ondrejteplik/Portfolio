@@ -1,7 +1,7 @@
 ---
 kategorie: single cover
 rok: 2026
-spoluprace: with antonín chod
+spoluprace: with antonín choT
 ---
 
-![200](Assety/Resetedh_ADAM5_cover.jpg)
+![000](Assety/Resetedh_ADAM5_cover.jpg)

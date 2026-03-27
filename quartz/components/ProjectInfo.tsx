@@ -20,18 +20,18 @@ const ProjectInfo: QuartzComponent = ({ fileData }: QuartzComponentProps) => {
 // Zjednodušený styl bez rámečků, čistý bílý text
 ProjectInfo.css = `
 .project-info-sidebar {
-  /* TADY JE TA ZMĚNA: Zvětšili jsme horní odsazení z 2rem na 110px. */
-  /* Hodnota 110px obvykle v Quartzu odpovídá výšce od drobečkové navigace */
-  /* přes nadpis až k začátku obrázku. Možná si ji budeš muset jemně doladit. */
-  margin-top: 300px; 
+  /* Zkusíme padding místo marginu, ten bývá v bočních panelech silnější */
+  padding-top: 150px !important; 
   
   display: flex;
   flex-direction: column;
-  gap: 0.6rem; /* Mezera mezi jednotlivými řádky */
+  gap: 0.6rem;
 }
+
 .info-item {
-  color: #ffffff; /* Čistě bílý text */
+  color: #ffffff !important;
   font-size: 1rem;
+  line-height: 1.4;
 }
 `
 
