@@ -13,7 +13,7 @@ export const sharedPageComponents: SharedLayout = {
 export const defaultContentPageLayout: PageLayout = {
   beforeBody: [
     Component.ConditionalRender({
-      component: Component.Breadcrumbs({ rootName: "Úvod" }),
+      component: Component.Breadcrumbs({ rootName: "About" }),
       condition: (page) => page.fileData.slug !== "index",
     }),
     Component.ArticleTitle(),
@@ -25,8 +25,8 @@ export const defaultContentPageLayout: PageLayout = {
     Component.MobileOnly(Component.Spacer()),
     Component.Explorer({ title: "Portfolio" }),
   ],
-  right: [
-    //Component.Graph(),
+ right: [
+    Component.ProjectInfo(), // TADY JE NAŠE NOVÁ KOMPONENTA!
     Component.DesktopOnly(Component.TableOfContents()),
     Component.Backlinks(),
   ],
