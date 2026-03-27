@@ -1,6 +1,9 @@
 @use "./base.scss";
 
 // put your custom CSS here!
-footer {
+/* Odstranění čáry na konci stránky */
+.page .center > hr:last-of-type,
+footer,
+.spacer {
   display: none !important;
 }
