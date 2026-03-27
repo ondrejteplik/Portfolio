@@ -1,2 +1,2 @@
-cover skladbyy
-![[Resetedh_ADAM5_cover.jpg]]
+cover 
+![](Assety/Resetedh_ADAM5_cover.jpg)
