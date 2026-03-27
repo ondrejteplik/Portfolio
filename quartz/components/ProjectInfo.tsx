@@ -23,7 +23,7 @@ ProjectInfo.css = `
   /* TADY JE TA ZMĚNA: Zvětšili jsme horní odsazení z 2rem na 110px. */
   /* Hodnota 110px obvykle v Quartzu odpovídá výšce od drobečkové navigace */
   /* přes nadpis až k začátku obrázku. Možná si ji budeš muset jemně doladit. */
-  margin-top: 110px; 
+  margin-top: 300px; 
   
   display: flex;
   flex-direction: column;
