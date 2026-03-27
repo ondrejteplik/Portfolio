@@ -3,8 +3,10 @@ import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } fro
 const ProjectInfo: QuartzComponent = ({ fileData }: QuartzComponentProps) => {
   const { frontmatter } = fileData
   
+  // Zobrazíme panel jen tehdy, když je v hlavičce aspoň něco vyplněno
   if (!frontmatter || (!frontmatter.kategorie && !frontmatter.rok && !frontmatter.spoluprace && !frontmatter.misto)) return null
 
+  // Tady jsme smazali nadpis i ta slova "Kategorie:", "Rok:" atd. Zůstaly jen samotné hodnoty.
   return (
     <div class="project-info-sidebar">
       {frontmatter.kategorie && <div class="info-item">{frontmatter.kategorie}</div>}
@@ -15,16 +17,20 @@ const ProjectInfo: QuartzComponent = ({ fileData }: QuartzComponentProps) => {
   )
 }
 
+// Zjednodušený styl bez rámečků, čistý bílý text
 ProjectInfo.css = `
 .project-info-sidebar {
-  margin-top: 2rem;
+  /* TADY JE TA ZMĚNA: Zvětšili jsme horní odsazení z 2rem na 110px. */
+  /* Hodnota 110px obvykle v Quartzu odpovídá výšce od drobečkové navigace */
+  /* přes nadpis až k začátku obrázku. Možná si ji budeš muset jemně doladit. */
+  margin-top: 110px; 
+  
   display: flex;
   flex-direction: column;
-  gap: 0.5rem; /* Malá mezera mezi řádky */
+  gap: 0.6rem; /* Mezera mezi jednotlivými řádky */
 }
-
 .info-item {
-  color: #ffffff; /* Čistě bílá barva */
+  color: #ffffff; /* Čistě bílý text */
   font-size: 1rem;
 }
 `
