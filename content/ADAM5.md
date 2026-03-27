@@ -1,4 +1,6 @@
 single cover
+
 artdirection
-with antonín chod
+
+with antonín chodd
 ![550](Assety/Resetedh_ADAM5_cover.jpg)
