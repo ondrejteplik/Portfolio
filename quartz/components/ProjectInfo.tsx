@@ -3,12 +3,13 @@ import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } fro
 const ProjectInfo: QuartzComponent = ({ fileData }: QuartzComponentProps) => {
   const { frontmatter } = fileData
   
-  // Zobrazíme panel jen tehdy, když je v hlavičce aspoň něco vyplněno
   if (!frontmatter || (!frontmatter.kategorie && !frontmatter.rok && !frontmatter.spoluprace && !frontmatter.misto)) return null
 
-  // Tady jsme smazali nadpis i ta slova "Kategorie:", "Rok:" atd. Zůstaly jen samotné hodnoty.
   return (
     <div class="project-info-sidebar">
+      {/* Toto vytvoří neviditelný prostor nad textem */}
+      <div class="info-spacer"></div>
+      
       {frontmatter.kategorie && <div class="info-item">{frontmatter.kategorie}</div>}
       {frontmatter.rok && <div class="info-item">{frontmatter.rok}</div>}
       {frontmatter.spoluprace && <div class="info-item">{frontmatter.spoluprace}</div>}
@@ -17,21 +18,22 @@ const ProjectInfo: QuartzComponent = ({ fileData }: QuartzComponentProps) => {
   )
 }
 
-// Zjednodušený styl bez rámečků, čistý bílý text
 ProjectInfo.css = `
 .project-info-sidebar {
-  /* Zkusíme padding místo marginu, ten bývá v bočních panelech silnější */
-  padding-top: 150px !important; 
-  
   display: flex;
   flex-direction: column;
-  gap: 0.6rem;
+  gap: 0.5rem;
+}
+
+/* Tímto natvrdo určíme výšku prázdného místa nad textem */
+.info-spacer {
+  height: 120px; /* Tuto hodnotu měň (např. 140px, 160px...), dokud to nebude lícovat s fotkou */
+  display: block;
 }
 
 .info-item {
   color: #ffffff !important;
   font-size: 1rem;
-  line-height: 1.4;
 }
 `
 
