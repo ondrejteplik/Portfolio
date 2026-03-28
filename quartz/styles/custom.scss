@@ -1,34 +1,35 @@
-@use "./base.scss";
+/* --- TOTÁLNÍ RESET PRAVÉHO SLOUPCE --- */
 
-// 1. Odstranění čáry na konci stránky a patičky
-.page .center > hr:last-of-type,
-footer,
-.spacer {
-  display: none !important;
-}
-
-/* 2. ÚPLNÉ VYPNUTÍ JEŽDĚNÍ PRO CELÝ PRAVÝ SLOUPEC */
-.sidebar.right {
-  position: relative !important; /* Tohle vypne to "lepení" pro celý sloupec */
+/* 1. Musíme domluvit samotnému kontejneru sloupce */
+aside.sidebar.right {
+  position: relative !important; 
   top: 0 !important;
-  display: flex !important;
-  flex-direction: column !important;
   height: auto !important;
+  overflow: visible !important;
+  display: block !important; /* Vypne flex/grid, který by to mohl držet */
 }
 
-/* 3. ZAROVNÁNÍ TVÉHO PANELU */
+/* 2. Musíme domluvit vnitřnímu obalu, který Quartz často používá */
+aside.sidebar.right > .sidebar-inner {
+  position: relative !important;
+  top: 0 !important;
+}
+
+/* 3. Zarovnání tvého info panelu k fotce */
 .project-info-sidebar {
-  /* Tímto číslem hýbej, dokud to nebude u fotky */
-  margin-top: 280px !important; 
+  /* Tímto číslem teď fakt pohneme – dej tam klidně 350px, ať vidíme, jestli se to hne */
+  margin-top: 350px !important; 
   
+  position: static !important; /* Absolutní zákaz ježdění */
   display: flex !important;
   flex-direction: column;
   gap: 0.5rem;
-  /* Zrušíme jakékoli zbytky sticky chování */
-  position: static !important;
+
+  /* TESTOVACÍ RÁMEČEK - pak ho smažeme */
+  /* Pokud uvidíš červený rámeček, víme, že CSS funguje! */
+  border: 1px solid red !important; 
 }
 
-/* 4. VZHLED TEXTU */
 .info-item {
   color: #ffffff !important;
   font-size: 1rem;
