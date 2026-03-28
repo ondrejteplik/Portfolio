@@ -7,23 +7,28 @@ footer,
   display: none !important;
 }
 
-// 2. Zarovnání informací k projektu (BEZ JEŽDĚNÍ)
+/* 2. ÚPLNÉ VYPNUTÍ JEŽDĚNÍ PRO CELÝ PRAVÝ SLOUPEC */
+.sidebar.right {
+  position: relative !important; /* Tohle vypne to "lepení" pro celý sloupec */
+  top: 0 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  height: auto !important;
+}
+
+/* 3. ZAROVNÁNÍ TVÉHO PANELU */
 .project-info-sidebar {
-  /* Tímto číslem hýbej, abys to dostal přesně k hraně fotky */
-  /* Pokud je to pořád moc vysoko, dej tam třeba 320px nebo 350px */
+  /* Tímto číslem hýbej, dokud to nebude u fotky */
   margin-top: 280px !important; 
-
-  /* Tohle je to "kladivo", které zruší to ježdění s tebou: */
-  position: static !important; 
-  top: auto !important;
-
+  
   display: flex !important;
   flex-direction: column;
   gap: 0.5rem;
-  align-self: flex-start;
+  /* Zrušíme jakékoli zbytky sticky chování */
+  position: static !important;
 }
 
-// 3. Vzhled textu v info panelu
+/* 4. VZHLED TEXTU */
 .info-item {
   color: #ffffff !important;
   font-size: 1rem;
