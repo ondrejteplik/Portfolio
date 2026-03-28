@@ -1,21 +1,21 @@
 @use "./base.scss";
 
-// put your custom CSS here!
-/* Odstranění čáry na konci stránky */
+// 1. Odstranění čáry na konci stránky a patičky
 .page .center > hr:last-of-type,
 footer,
 .spacer {
   display: none !important;
 }
-/* Vynucené zarovnání informací o projektu k obrázku */
-/* Zarovnání informací k obrázku bez přilepení */
+
+// 2. Zarovnání informací k projektu (BEZ JEŽDĚNÍ)
 .project-info-sidebar {
-  /* Tímto číslem hýbej (např. 250px, 280px...), dokud text nebude v rovině s fotkou */
-  margin-top: 260px !important; 
-  
-  /* Zrušení sticky efektu - teď to bude scrollovat pryč s obrázkem */
-  position: relative !important;
-  top: 0 !important; 
+  /* Tímto číslem hýbej, abys to dostal přesně k hraně fotky */
+  /* Pokud je to pořád moc vysoko, dej tam třeba 320px nebo 350px */
+  margin-top: 280px !important; 
+
+  /* Tohle je to "kladivo", které zruší to ježdění s tebou: */
+  position: static !important; 
+  top: auto !important;
 
   display: flex !important;
   flex-direction: column;
@@ -23,6 +23,7 @@ footer,
   align-self: flex-start;
 }
 
+// 3. Vzhled textu v info panelu
 .info-item {
   color: #ffffff !important;
   font-size: 1rem;
