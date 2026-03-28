@@ -7,3 +7,24 @@ footer,
 .spacer {
   display: none !important;
 }
+/* Vynucené zarovnání informací o projektu k obrázku */
+.project-info-sidebar {
+  /* 1. Horní odsazení, aby to začínalo u fotky */
+  /* Pokud je to pořád moc vysoko, zvětšuj toto číslo (třeba na 300px) */
+  margin-top: 240px !important; 
+  
+  /* 2. Zastavení na místě při scrollu (Sticky efekt) */
+  position: sticky !important;
+  top: 40px !important; /* Kde se to zastaví od horní hrany prohlížeče při scrollu */
+  
+  /* 3. Vzhled */
+  display: flex !important;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-self: flex-start;
+}
+
+.info-item {
+  color: #ffffff !important;
+  font-size: 1rem;
+}
