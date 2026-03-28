@@ -8,16 +8,15 @@ footer,
   display: none !important;
 }
 /* Vynucené zarovnání informací o projektu k obrázku */
+/* Zarovnání informací k obrázku bez přilepení */
 .project-info-sidebar {
-  /* 1. Horní odsazení, aby to začínalo u fotky */
-  /* Pokud je to pořád moc vysoko, zvětšuj toto číslo (třeba na 300px) */
-  margin-top: 240px !important; 
+  /* Tímto číslem hýbej (např. 250px, 280px...), dokud text nebude v rovině s fotkou */
+  margin-top: 260px !important; 
   
-  /* 2. Zastavení na místě při scrollu (Sticky efekt) */
-  position: sticky !important;
-  top: 40px !important; /* Kde se to zastaví od horní hrany prohlížeče při scrollu */
-  
-  /* 3. Vzhled */
+  /* Zrušení sticky efektu - teď to bude scrollovat pryč s obrázkem */
+  position: relative !important;
+  top: 0 !important; 
+
   display: flex !important;
   flex-direction: column;
   gap: 0.5rem;
