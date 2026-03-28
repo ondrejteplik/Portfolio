@@ -19,7 +19,7 @@ ProjectInfo.css = `
 .project-info-sidebar {
   /* TADY JE TO KOUZLO: */
   position: sticky;          /* Řekne prvku, že se má přilepit */
-  top: 20px;                /* Určí, jak daleko od horní hrany okna má zůstat viset */
+  top: 80px;                /* Určí, jak daleko od horní hrany okna má zůstat viset */
   
   /* Odstranili jsme margin-top a info-spacer, protože 'top' teď řeší obojí: 
      pozici u obrázku i to, kde to zůstane viset při scrollu. */
