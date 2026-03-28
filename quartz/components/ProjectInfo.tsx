@@ -7,9 +7,6 @@ const ProjectInfo: QuartzComponent = ({ fileData }: QuartzComponentProps) => {
 
   return (
     <div class="project-info-sidebar">
-      {/* Toto vytvoří neviditelný prostor nad textem */}
-      <div class="info-spacer"></div>
-      
       {frontmatter.kategorie && <div class="info-item">{frontmatter.kategorie}</div>}
       {frontmatter.rok && <div class="info-item">{frontmatter.rok}</div>}
       {frontmatter.spoluprace && <div class="info-item">{frontmatter.spoluprace}</div>}
@@ -20,15 +17,18 @@ const ProjectInfo: QuartzComponent = ({ fileData }: QuartzComponentProps) => {
 
 ProjectInfo.css = `
 .project-info-sidebar {
+  /* TADY JE TO KOUZLO: */
+  position: sticky;          /* Řekne prvku, že se má přilepit */
+  top: 120px;                /* Určí, jak daleko od horní hrany okna má zůstat viset */
+  
+  /* Odstranili jsme margin-top a info-spacer, protože 'top' teď řeší obojí: 
+     pozici u obrázku i to, kde to zůstane viset při scrollu. */
+
+  align-self: flex-start;    /* Důležité: zabrání roztažení prvku na celou výšku sloupce */
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-}
-
-/* Tímto natvrdo určíme výšku prázdného místa nad textem */
-.info-spacer {
-  height: 370px; /* Tuto hodnotu měň (např. 140px, 160px...), dokud to nebude lícovat s fotkou */
-  display: block;
+  z-index: 10;               /* Aby to zůstalo nad ostatními věcmi při scrollu */
 }
 
 .info-item {
