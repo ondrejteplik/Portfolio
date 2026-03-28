@@ -27,7 +27,7 @@ ProjectInfo.css = `
 
 /* Tímto natvrdo určíme výšku prázdného místa nad textem */
 .info-spacer {
-  height: 120px; /* Tuto hodnotu měň (např. 140px, 160px...), dokud to nebude lícovat s fotkou */
+  height: 400px; /* Tuto hodnotu měň (např. 140px, 160px...), dokud to nebude lícovat s fotkou */
   display: block;
 }
 
