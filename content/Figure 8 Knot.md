@@ -1,8 +1,8 @@
 ---
 kategorie: object
-spoluprace: with antonín chod, jaroslav barášek
+spoluprace: with a. chod, j. barášek
 vydani: "2025"
-misto: dresden
+misto: dresden, c. rockefeller center
 ---
 ![](Assety/COMP_MG_8032.jpeg)
 ![](Assety/COMP_46.jpeg)

@@ -23,9 +23,9 @@ const config: QuartzConfig = {
       fontOrigin: "googleFonts",
       cdnCaching: true,
       typography: {
-        header: "Schibsted Grotesk",
-        body: "Source Sans Pro",
-        code: "IBM Plex Mono",
+        header: "Rubik",
+        body: "Rubik",
+        code: "Rubik",
       },
       colors: {
         // Světlý režim přepsaný tmavými barvami, aby byl tmavý režim vynucen

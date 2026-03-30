@@ -1,6 +1,6 @@
 ---
 kategorie: single cover
-spoluprace: with antonín chod
+spoluprace: with a. chod
 vydani: "2025"
 ---
 

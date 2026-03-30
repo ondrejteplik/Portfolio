@@ -1,6 +1,6 @@
 ---
 kategorie: music video
-spoluprace: with lukáš věchet, vojtěch starý
+spoluprace: with l. věchet, v. starý
 vydani: "2024"
 ---
 <div style="width: 85%; margin-top: 1rem; position: relative; margin-left: 0;">

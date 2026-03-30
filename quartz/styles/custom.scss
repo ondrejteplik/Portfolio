@@ -23,7 +23,7 @@ article img {
   border-radius: 5px; 
 }
 img[alt="600"] {
-  width: 75% !important; /* Tady si nastav procenta, jaká potřebuješ (nebo klidně 600px) */
+  width: 67% !important; /* Tady si nastav procenta, jaká potřebuješ (nebo klidně 600px) */
   display: block;
   margin: 0 auto; /* Tohle ti fotku zarovná na střed, pokud chceš */
 }
@@ -68,4 +68,23 @@ article iframe {
 }
 .project-info-sidebar {
   text-align: right !important;
+}
+/* Normální text (odstavce) */
+body {
+  font-weight: 100; 
+}
+
+/* Hlavní nadpis webu (1 křížek v Obsidianu) */
+h1 {
+  font-weight: 100;
+}
+
+/* Podnadpisy (2 křížky v Obsidianu) */
+h2 {
+  font-weight: 100;
+}
+
+/* Všechny odkazy na webu */
+a {
+  font-weight: 100;
 }

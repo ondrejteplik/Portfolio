@@ -1,6 +1,9 @@
 ---
-title: Welcome to Quartz
+title: Kontakt
 ---
 
-This is a blank Quartz installation.
-See the [documentation](https://quartz.jzhao.xyz) for how to get started.
+ondra.teplik<span>@</span>gmail.com
+
+\+ 420 774 823 681
+
+![](Assety/COMP_profil%2003.jpg)

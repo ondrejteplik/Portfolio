@@ -1,6 +1,6 @@
 ---
 kategorie: project art direction
-spoluprace: with antonín chod
+spoluprace: with a. chod
 vydani: "2025"
 ---
 <div style="width: 85%; margin-top: 1rem; position: relative; margin-left: 0;">

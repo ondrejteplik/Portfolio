@@ -1,6 +1,6 @@
 ---
 kategorie: performance, object
-spoluprace: with antonín chod
+spoluprace: with a. chod
 vydani: "2025"
 ---
 ![](Assety/COMP_IMG_1916-8.jpeg)

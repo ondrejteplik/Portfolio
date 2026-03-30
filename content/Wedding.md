@@ -1,6 +1,6 @@
 ---
 kategorie: photos, performance
-spoluprace: with dmitrii ostretsov
+spoluprace: with d. ostretsov
 vydani: "2026"
 misto: růžek gallery
 ---

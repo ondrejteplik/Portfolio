@@ -1,6 +1,6 @@
 ---
 kategorie: music video
-spoluprace: with ondřej mička
+spoluprace: with o. mička
 vydani: "2026"
 ---
 <div style="width: 85%; margin-top: 1rem; position: relative; margin-left: 0;">
