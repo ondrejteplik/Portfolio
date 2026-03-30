@@ -1,36 +1,71 @@
-/* --- TOTÁLNÍ RESET PRAVÉHO SLOUPCE --- */
+@use "./base.scss";
 
-/* 1. Musíme domluvit samotnému kontejneru sloupce */
-aside.sidebar.right {
-  position: relative !important; 
-  top: 0 !important;
-  height: auto !important;
-  overflow: visible !important;
-  display: block !important; /* Vypne flex/grid, který by to mohl držet */
+/* 1. SCHOVÁNÍ PRVKŮ */
+footer, .spacer, .page .center > hr:last-of-type {
+  display: none !important;
 }
 
-/* 2. Musíme domluvit vnitřnímu obalu, který Quartz často používá */
-aside.sidebar.right > .sidebar-inner {
+/* 2. ZÁKAZ JEŽDĚNÍ PRAVÉHO SLOUPCE (Sticky) */
+aside.sidebar.right, 
+.sidebar-inner {
   position: relative !important;
   top: 0 !important;
+  height: auto !important;
+  display: block !important;
 }
 
-/* 3. Zarovnání tvého info panelu k fotce */
+/* 3. ZMENŠENÍ A ZAROVNÁNÍ OBRÁZKŮ */
+article img {
+  max-width: 85% !important; 
+  display: block !important;
+  margin-left: 0 !important;
+  margin-right: auto !important;
+  border-radius: 5px; 
+}
+img[alt="600"] {
+  width: 75% !important; /* Tady si nastav procenta, jaká potřebuješ (nebo klidně 600px) */
+  display: block;
+  margin: 0 auto; /* Tohle ti fotku zarovná na střed, pokud chceš */
+}
+/* 4. POSUNUTÍ STŘEDU (FOTKY) LEHCE DOPRAVA */
+.center {
+  position: relative !important;
+  left: 60px !important; /* Zvyš (např. 100px), pokud to chceš víc doprava */
+}
+
+/* 5. POSUNUTÍ INFO PANELU DOLEVA K FOTCE */
 .project-info-sidebar {
-  /* Tímto číslem teď fakt pohneme – dej tam klidně 350px, ať vidíme, jestli se to hne */
-  margin-top: 350px !important; 
+  /* Tímto přitahuješ texty k fotce. Čím větší číslo, tím blíž to poletí doleva */
+  right: 60px !important; 
   
-  position: static !important; /* Absolutní zákaz ježdění */
+  /* Původní nastavení výšky (Tady jsi měl nahoře 93px a dole 450px, 
+     nechal jsem 93px. Změň to podle toho, jak potřebuješ lícovat s fotkou) */
+  margin-top: 44px !important; 
+  
+  /* Umožní posouvání do stran a zakáže ježdění při scrollu */
+  position: relative !important; 
   display: flex !important;
   flex-direction: column;
-  gap: 0.5rem;
-
-  /* TESTOVACÍ RÁMEČEK - pak ho smažeme */
-  /* Pokud uvidíš červený rámeček, víme, že CSS funguje! */
-  border: 1px solid red !important; 
+  gap: 10px;
 }
 
+/* 6. BARVA TEXTU V INFO PANELU */
 .info-item {
   color: #ffffff !important;
   font-size: 1rem;
+}
+/* 7. SCHOVÁNÍ DROBEČKOVÉ NAVIGACE (Cestičky typu About > ...) */
+.breadcrumb-container, .breadcrumb {
+  display: none !important;
+}
+/* 8. MEZERA NAD VIDEEM (A zakulacené rohy) */
+article iframe {
+  /* Tímhle určuješ tu mezeru nad videem (zkus 2rem, 3rem, nebo klidně 50px) */
+  margin-top: 1rem !important; 
+  
+  /* Volitelný bonus: trochu zakulatíme rohy videa, ať to ladí s fotkama! */
+  border-radius: 5px; 
+}
+.project-info-sidebar {
+  text-align: right !important;
 }
