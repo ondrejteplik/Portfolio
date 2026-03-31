@@ -13,11 +13,15 @@ I myšlenek je méně.
 Vidím skrz.
 
 Dech života mě zavál mezi sopečné kopce,  
-jejichž vrcholky líbá všudypřítomný sirný opar.  
+jejichž vrcholky líbá,  
+&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;námi uctívaný,  
+&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp; &emsp; sirný opar.  
 
-U úpatí klečí a škemrá temná modř.  
+&emsp;&emsp; &emsp;&emsp;&emsp; &emsp; &emsp;&emsp; &emsp; &emsp;&emsp;&emsp;  U úpatí klečí a škemrá temná modř.  
 
 
+
+<br>
 Městu vládne krysí princ a stín jeho pošetilosti je všudypřítomný! 
 
 V příbytcích je vlhko,   
