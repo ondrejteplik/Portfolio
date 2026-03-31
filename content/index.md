@@ -1,5 +1,5 @@
 ---
-title: Kontakt
+title: Contact
 ---
 
 <div class="profil-kontejner">

@@ -5,7 +5,7 @@ vydani: "2024"
 Místo, jež mi bylo vždy domovem,  
 nepoznávám ho.  
 Přitom je stejné.  
-Já jsem se změnil. 
+To já jsem se změnil. 
 
 
 Nohy mám rychlejší, dech pomalejší.   
@@ -29,7 +29,7 @@ to máme ale pěkný den..
 Zdá se, že Noe byl kapitán morové lodi.
 
 Jak dlouho jsem nakažen?  
-Část mne je hnilobná, ale už mám sílu se uzdravit.  
+Část mne je hnilobná, ale prosívtá síla k uzdravení.  
  
 Musím být obezřetný. 
 
