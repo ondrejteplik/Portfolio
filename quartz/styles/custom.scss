@@ -88,3 +88,39 @@ h2 {
 a {
   font-weight: 200;
 }
+/* --- NASTAVENÍ KONTAKTU DO PRAVÉHO SLOUPCE (index.md) --- */
+
+.profil-kontejner {
+  position: relative;
+}
+
+.kontakt-vpravo {
+  position: absolute;
+  top: 0;
+  right: -150px; /* Tady jsme to číslo zmenšili, aby text připlul zpátky doleva */
+  width: 250px;
+  text-align: right; 
+}
+
+/* Smrsknutí mezer mezi řádky v kontaktu */
+.kontakt-vpravo p {
+  margin: 0 0 0.5rem 0 !important;
+}
+
+/* BEZPEČNOSTNÍ POJISTKA PRO MOBILY A NOTEBOOKY */
+/* Když se obrazovka zmenší, kontakt skočí bezpečně pod fotku doleva */
+@media (max-width: 1200px) {
+  .kontakt-vpravo {
+    position: static;
+    text-align: left;
+    margin-top: 1rem;
+  }
+}
+.kontakt-vpravo {
+  position: absolute;
+  top: 0;
+  right: -172px; /* Tímhle to posuneš ještě dál od fotky do prázdna */
+  width: 250px;
+  text-align: right; 
+  margin-top: -8px; /* 20px to posune kousek dolů*/
+}
