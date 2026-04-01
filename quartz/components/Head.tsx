@@ -96,17 +96,6 @@ export default (() => {
             return resource
           }
         })}
-        <script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js"></script>
-<script dangerouslySetInnerHTML={{
-  __html: `
-    document.addEventListener('nav', () => {
-      mediumZoom('img:not(a img)', {
-        margin: 24,
-        background: 'rgba(0, 0, 0, 0.9)'
-      })
-    })
-  `
-}}></script>
       </head>
     )
   }
