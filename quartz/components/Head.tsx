@@ -13,7 +13,7 @@ export default (() => {
     ctx,
   }: QuartzComponentProps) => {
     const titleSuffix = cfg.pageTitleSuffix ?? ""
-    const title = "Portfolio"
+    const title = "portfolio"
     const description =
       fileData.frontmatter?.socialDescription ??
       fileData.frontmatter?.description ??

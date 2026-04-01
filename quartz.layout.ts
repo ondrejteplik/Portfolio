@@ -23,7 +23,7 @@ export const defaultContentPageLayout: PageLayout = {
   left: [
     Component.PageTitle(),
     Component.MobileOnly(Component.Spacer()),
-    Component.Explorer({ title: "Portfolio" }),
+    Component.Explorer({ title: "portfolio" }),
   ],
  right: [
     Component.ProjectInfo(), // TADY JE NAŠE NOVÁ KOMPONENTA!
